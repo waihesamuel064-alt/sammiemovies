@@ -2,7 +2,7 @@
 
 A responsive movie and TV show discovery web application built with React, Vite and Material UI. Users can browse trending and popular titles, filter by genre, search by title, view details and keep a personal watchlist.
 
-**Live app:** [paste your Vercel link here]
+**Live app:** https://sammiemovies-3qdd.vercel.app
 
 ## Features
 
@@ -33,7 +33,7 @@ No screenshot was supplied with the assignment, so the design is inspired by the
 ## Run locally
 
 1. Clone the repository:
-   `git clone [your repository link]`
+   `git clone https://github.com/waihesamuel064-alt/sammiemovies.git`
 2. Go into the folder:
    `cd sammiemovies`
 3. Install dependencies:
