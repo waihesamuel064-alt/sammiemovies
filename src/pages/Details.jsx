@@ -7,7 +7,7 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import { getDetails, imageUrl } from '../services/tmdb';
 import { Loader, ErrorMessage } from '../components/Loader';
 import BookmarkRemoveIcon from '@mui/icons-material/BookmarkRemove';
-import { useWatchlist } from '../Context/WatchlistContext';
+import { useWatchlist } from '../context/WatchlistContext';
 
 export default function Details() {
   const { type, id } = useParams();

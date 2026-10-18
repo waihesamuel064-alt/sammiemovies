@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import DeleteIcon from '@mui/icons-material/Delete';
 import MovieCard from '../components/MovieCard';
 import { EmptyMessage } from '../components/Loader';
-import { useWatchlist } from '../Context/WatchlistContext';
+import { useWatchlist } from '../context/WatchlistContext';
 
 export default function Watchlist() {
   const { watchlist, removeFromWatchlist } = useWatchlist();
