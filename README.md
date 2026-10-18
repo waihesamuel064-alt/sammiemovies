@@ -58,4 +58,4 @@ The TMDB v3 API key is designed for browser use. It is stored in an `.env` file 
 
 ## Author
 
-[WAIHE SAMUEL], [M26B13/050]
+WAIHE SAMUEL, M26B13/050
