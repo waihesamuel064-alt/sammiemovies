@@ -47,3 +47,5 @@ export const getTVGenres = () => request('/genre/tv/list');
 export const searchMulti = (query, page = 1) =>
   request('/search/multi', { query, page });
 export const getDetails = (type, id) => request(`/${type}/${id}`);
+export const getVideos = (type, id) => request(`/${type}/${id}/videos`);
+export const getProviders = (type, id) => request(`/${type}/${id}/watch/providers`);

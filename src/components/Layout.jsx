@@ -11,6 +11,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MovieIcon from '@mui/icons-material/Movie';
 import TvIcon from '@mui/icons-material/Tv';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 
 const DRAWER_WIDTH = 220;
 
@@ -18,6 +19,7 @@ const NAV_ITEMS = [
   { label: 'Home', path: '/', icon: <HomeIcon /> },
   { label: 'Movies', path: '/movies', icon: <MovieIcon /> },
   { label: 'TV Shows', path: '/tv', icon: <TvIcon /> },
+  { label: 'Free Films', path: '/free', icon: <OndemandVideoIcon /> },
   { label: 'My Watchlist', path: '/watchlist', icon: <BookmarkIcon /> },
 ];
 

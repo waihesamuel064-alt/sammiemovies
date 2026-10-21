@@ -8,6 +8,9 @@ import { getDetails, imageUrl } from '../services/tmdb';
 import { Loader, ErrorMessage } from '../components/Loader';
 import BookmarkRemoveIcon from '@mui/icons-material/BookmarkRemove';
 import { useWatchlist } from '../context/WatchlistContext';
+import TrailerDialog from '../components/TrailerDialog';
+import WhereToWatch from '../components/WhereToWatch';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Details() {
   const { type, id } = useParams();
@@ -121,6 +124,18 @@ export default function Details() {
             <Typography sx={{ maxWidth: 700, lineHeight: 1.7, mb: 3 }}>
               {item.overview || 'No overview is available for this title.'}
             </Typography>
+            <Box sx={{ mb: 2, display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+  <TrailerDialog type={type} id={id} />
+  <Button
+    variant="outlined"
+    startIcon={<YouTubeIcon />}
+    href={`https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} ${year} movie`)}`}
+    target="_blank"
+    rel="noreferrer"
+  >
+    Find on YouTube
+  </Button>
+</Box>
 
             {isInWatchlist(item.id, type) ? (
   <Button
@@ -139,6 +154,7 @@ export default function Details() {
     Add to Watchlist
   </Button>
 )}
+<WhereToWatch type={type} id={id} />
           </Grid>
         </Grid>
       </Box>
